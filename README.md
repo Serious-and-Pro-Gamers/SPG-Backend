@@ -26,6 +26,7 @@ app.run(debug=True)
 
 ### Run local instance of Flask app
 ```
+*** Use localhost for dev environment ***
 (env) $ python app.py
 ```
 

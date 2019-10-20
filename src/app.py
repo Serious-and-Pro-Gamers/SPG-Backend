@@ -21,4 +21,5 @@ def ping():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Since the host has a wildcard, use the respective urls for dev and prod
+    app.run(host='0.0.0.0', debug=True)
