@@ -45,10 +45,10 @@ from .controllers.product_controller import product_api
 app.register_blueprint(product_api)
 
 
-# Route for root directory
+# Route for root endpoint <- Yes I did this on purpose
 @app.route('/')
 def app_route():
-    return "hello world"
+    return "Welcome to the SPG API (Work in progress!)"
 
 
 # Run development server
