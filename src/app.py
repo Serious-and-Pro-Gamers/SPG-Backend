@@ -1,8 +1,7 @@
 import os
-import json
 from flask_cors import CORS
 from dotenv import load_dotenv
-from flask import Flask, request, jsonify
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 
@@ -46,7 +45,7 @@ from .controllers.product_controller import product_api
 app.register_blueprint(product_api)
 
 
-# Route for root directory 
+# Route for root directory
 @app.route('/')
 def app_route():
     return "hello world"
