@@ -15,6 +15,11 @@ $ source env/bin/activate
 $ env\Scripts\activate
 ```
 
+### Install wheel for dependencies
+```
+(env) $ pip install wheel
+```
+
 ### Install requirements / dependencies
 ```
 (env) $ pip install -r requirements.txt
