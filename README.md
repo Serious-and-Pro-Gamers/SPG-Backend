@@ -1,6 +1,6 @@
-# spgsite-webapp backend
+# SPG Webapp Backend
 
-## Project virtual environment setup
+### Project virtual environment setup
 ```
 $ python3 -m venv env
 ```
