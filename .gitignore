@@ -112,4 +112,3 @@ crashlytics-build.properties
 
 # Custom
 Pipfile.lock
-.pylintrc
