@@ -41,8 +41,12 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 # Import needs to be here because it has to load the db connection and marshmallow
-from .controllers.product_controller import product_api
-app.register_blueprint(product_api)
+from .controllers import product_controller, user_controller
+
+
+# Initialize controller endpoints
+app.register_blueprint(product_controller.product_api)
+app.register_blueprint(user_controller.user_api)
 
 
 # Route for root endpoint <- Yes I did this on purpose
